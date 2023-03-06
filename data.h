@@ -8,3 +8,9 @@ struct Student {
 	char password[]; //登录密码 
 	
 };
+
+struct StudentDataSet {
+    int size;
+    struct Student datas[MAX_STROAGE_SIZE];
+
+};
