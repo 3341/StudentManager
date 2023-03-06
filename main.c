@@ -1,7 +1,19 @@
-#include <stdio.h>
+#include <stdio.h> 
+#include <io.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int controller();
+void Welcome();
+
+FILE* fp;
 
 int main() {
-
+	Welcome();
+	int isSucceed = 0;
+	do {
+		isSucceed = login();
+	} while(!isSucceed)
+	return 0;
 }
 
 
@@ -22,17 +34,16 @@ void Welcome()// 欢迎界面函数
  printf("\n\t\t         ……\n");
  printf("\n\t\t         ……\n"); 
  printf("\n\t\t\t 	……\n");
+ }
  
+ void openFile(){
+ 	fp = fopen("student.txt","rw");
  }
-
- int test(){
-    
- }
-
-int login() {
-    
+ 
+void login(){
+	
 }
 
-int controller() {
-
+int controller(){
+	
 }
