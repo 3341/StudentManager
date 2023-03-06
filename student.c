@@ -18,5 +18,3 @@ void addStudent(char name[],char id[],int hasManagerPermission; //是否有更�
 void removeStudent(struct Student std ,FILE*fp) {
 
 }
-
-
