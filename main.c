@@ -25,6 +25,10 @@ void Welcome()// 欢迎界面函数
  
  }
 
+ int test(){
+    
+ }
+
 int login() {
     
 }
