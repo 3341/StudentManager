@@ -1,0 +1,39 @@
+[
+    {
+        "caretX": 1,
+        "caretY": 186,
+        "filename": "C:/Users/Administrator/Documents/projects/StudentManagerBeta/student.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 127
+    },
+    {
+        "caretX": 40,
+        "caretY": 9,
+        "filename": "C:/Users/Administrator/Documents/projects/StudentManagerBeta/data.c",
+        "focused": true,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 0,
+        "topLine": 1
+    },
+    {
+        "caretX": 9,
+        "caretY": 929,
+        "filename": "C:/Users/Administrator/Documents/projects/StudentManagerBeta/main.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 423
+    },
+    {
+        "caretX": 32,
+        "caretY": 9,
+        "filename": "C:/Users/Administrator/Documents/projects/StudentManagerBeta/data.h",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    }
+]

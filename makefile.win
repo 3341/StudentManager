@@ -1,0 +1,41 @@
+# Project: StudentManagerBeta
+# Makefile created by Red Panda C++ 2.21
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = StudentManagerBeta_private.res
+OBJ      = student.o data.o main.o $(RES)
+LINKOBJ  = student.o data.o main.o StudentManagerBeta_private.res
+CLEANOBJ  =  student.o data.o main.o  StudentManagerBeta_private.res StudentManagerBeta.exe
+LIBS     = 
+INCS     =  
+CXXINCS  =  
+BIN      = StudentManagerBeta.exe
+CXXFLAGS = $(CXXINCS)  -g3 -pipe -Wall -D__DEBUG__
+CFLAGS   = $(INCS)  -g3 -pipe -Wall -D__DEBUG__
+RM       = del /q /f
+WINDRESFLAGS  = 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+student.o: student.c data.h
+	$(CC) -c student.c -o student.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+data.o: data.c data.h
+	$(CC) -c data.c -o data.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+main.o: main.c data.h
+	$(CC) -c main.c -o main.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+StudentManagerBeta_private.res: StudentManagerBeta_private.rc 
+	$(WINDRES) -i StudentManagerBeta_private.rc --input-format=rc -o StudentManagerBeta_private.res -O coff $(WINDRESFLAGS) 
+
